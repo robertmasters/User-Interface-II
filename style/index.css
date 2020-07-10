@@ -22,34 +22,76 @@ time, mark, audio, video {
 }
 
 html{
-    font-size: 62.5;
+    font-size: 62.5%;
 }
-/* *{
 
+*{
+    box-sizing: border-box;
 }
 
 body{
-    
-} */
+    font-size: medium;
+    font-weight: bold;
+}
+header{
+    background-color: slategrey  ;
+    padding: 5px;
+}
 
 header h1{
+    color: white;
     display: flex;
     flex-flow: row wrap;
+    font-size: 2em;
+    margin: 3px;
+
 }
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
 .links{
-    width: 20%;
- 
+    width: 50%;
     display: flex;
     flex-flow: row wrap;
-    flex: 1 1;
-    justify-content: space-around;
+
+    /* justify-content: space-around; */
 }
+
+
 .links a{
     background-color: cadetblue;
-    padding: 5px;
-    border: white 1px;
+    /* padding: 4px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    border: 1px solid white;
     color:white;
     font-weight: bold;
     font-size: 1em;
     text-align: center;
+    text-decoration: none;
 }
+
+.one{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+}
+.two{
+    display: flex;
+    flex-flow: row wrap;
+}
+.npw{
+    color: red;
+    width: 10%;
+}
+.one .highlight div{
+    width: 10px;
+}
+
+
+
+
