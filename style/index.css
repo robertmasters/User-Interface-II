@@ -18,7 +18,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    max-width: 100%;
 }
 
 html{
@@ -39,7 +40,8 @@ body{
     font-weight: bold;
 }
 .container{
-    width: 800px;
+    /* width: 800px; */
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -85,6 +87,7 @@ nav .links a{
 
 .topimage, .toptext{
     width: 50%;
+    justify-content: space-around;
 
 }
 .toptext{
@@ -106,6 +109,7 @@ nav .links a{
 .two{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .links, .twoimgs{
@@ -145,9 +149,16 @@ footer a{
         width: 100%;
     }
     header{
-        background-color: #383838  ;
+        background-color: #383838;
         padding: 5px;
-        width: 55%;
+        width: 100%;
+        
+    }
+    /* header h1{
+        font-size: 2em;
+    } */
+    nav, .links a{
+        margin: 1px;
     }
     .one{
         display: flex;
@@ -155,29 +166,50 @@ footer a{
         margin: 30px;
         width: 100%;
     }
-    .one, img{
-        margin-left: 10px;
-        margin-top:5%;
+    .one{
 
+        width: 100%;
+    }
 
+    .topimage, .toptext{
+        width: 100%;
     }
     .two{
         display: flex;
         flex-flow: row wrap;
         margin: 5px;
-        width: 55%;
+        width: 100%;
+        justify-content: space-around;
     }
+
     footer{
-        width: 55%;
+        width: 100%;
     }
 }
 
-@media (max-width:500ps){
+@media (max-width:500px){
+    header{
+        
+        background: none;
+        padding: 30px;
+        width: 100%;
+   
+    }
     nav .links a{
         display: flex;
         flex-direction: column;
         margin: 10px;
+        font-size: 2em;
+        
+        /* width: 40%; */
+    } 
+
+    .topimage{
+        width: 100%;
+        
     }
+
+
 }
 
 
