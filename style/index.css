@@ -38,8 +38,14 @@ body{
     font-size: medium;
     font-weight: bold;
 }
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* -----Header */
 header{
-    background-color: slategrey  ;
+    background-color: #383838  ;
     padding: 5px;
 }
 
@@ -47,40 +53,36 @@ header h1{
     color: white;
     display: flex;
     flex-flow: row wrap;
-    font-size: 2em;
+    font-size: 3em;
     margin: 3px;
-
 }
-
-.container{
-    width: 800px;
-    margin: 0 auto;
-}
-
-.links a{
+nav .links a{
     background-color: cadetblue;
     color:white;
     font-weight: bold;
     font-size: 1em;
     text-align: center;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
-.links, .twoimgs{
-    margin: 10px;
-}
+/* -----top section of page */
 
 .one{
     display: flex;
     flex-flow: row wrap;
-    /* width: 50%; */
     margin: 30px;
 }
-.two{
-    display: flex;
-    flex-flow: row wrap;
+
+.one, img, h2, a, p{
+    margin: 10px;
 }
+.one h2{
+    font-size: 2em;
+}
+
 .topimage, .toptext{
     width: 50%;
 
@@ -89,19 +91,93 @@ header h1{
     padding: 50px;
 }
 
+.toptext a{
+    color:#FFFAF0;
+    background-color: #696969;
+    border: 1px solid white;
+    /* border-radius: 8px; */
+    padding: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+/* -----bottom section of page */
+.two{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.links, .twoimgs{
+    margin: 10px;
+}
+
+/* ----footer */
+
 footer {
+    
     padding:10px;
     color: white;
-    background-color: lightslategrey;
+    background-color: #383838;
     text-align: center;
+}
+.footertext{
+ 
+    margin: 10px;
+
 }
 
 footer a{
-    color: black;
-    font-size: larger;
+    color:#FFFAF0;
+    background-color: #696969;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 
+/* ----media queries */
+
+@media (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+    header{
+        background-color: #383838  ;
+        padding: 5px;
+        width: 55%;
+    }
+    .one{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        width: 100%;
+    }
+    .one, img{
+        margin-left: 10px;
+        margin-top:5%;
 
 
+    }
+    .two{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 5px;
+        width: 55%;
+    }
+    footer{
+        width: 55%;
+    }
+}
+
+@media (max-width:500ps){
+    nav .links a{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+}
 
 
